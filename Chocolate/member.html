@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <h1 id="header">CHOCOLATES</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="member.html">Become a Member</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="member">
+            <h1 id="joinhead">Join the Chocolate Club!</h1>
+            <h2 id="joinsub">Connect to People from around the World who share the same Appetite.</h2>
+       
+            <form action="register.php" method="post">
+            <div class="det">
+                <input type="text" placeholder="First Name" name="fname" required><br>
+                <input type="text" placeholder="Last Name" name="lname" required><br>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" placeholder="DD-MM-YYYY" name="dob" required><br>
+                <label for="email">Enter email Id</label><br>
+                <input type="email" id="email" placeholder="xyz@gmail.com" name="email" required><br>
+                <label for="fav">Select Your Favourite Chocolates(s)</label><br>
+                <div class="checkbox">
+                <input type="checkbox" name="choice[]" value="Milk" class="check">
+                <label for="type">Milk Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="White" class="check">
+                <label for="type">White Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Dark" class="check">
+                <label for="type">Dark Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Semisweet" class="check">
+                <label for="type">Semisweet Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Bittersweet" class="check">
+                <label for="type">Bittersweet Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Unsweetened" class="check">
+                <label for="type">Unsweetened Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Cocoa" class="check">
+                <label for="type">Cocoa Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Sweet German" class="check">
+                <label for="type">Sweet German Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Couverture" class="check">
+                <label for="type">Couverture Chocolate</label><br>
+                <input type="checkbox" name="choice[]" value="Ruby" class="check">
+                <label for="type">Ruby Chocolate</label><br>
+                </div>
+                <input type="submit" value="Join" name="join">
+            </div>
+             </form>
+        </div>
+    </body>
+</html>
